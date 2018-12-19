@@ -5,11 +5,12 @@ import Checkbox from '@material-ui/core/Checkbox';
 class Filter extends Component {
 
     render() {
+        // console.log('props', this.props);
         return (
         <div className="checkboxes">
-            <Checkbox/>
+            <Checkbox onClick={this.props.handleName}/>
             <label>Name</label>
-            <Checkbox/>
+            <Checkbox onClick={this.props.handleAge}/>
             <label>Age</label>
         </div>
         );
@@ -17,3 +18,4 @@ class Filter extends Component {
 }
 
 export default Filter;
+
